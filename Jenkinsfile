@@ -12,7 +12,7 @@ pipeline {
 
     stage('Build') {
        steps {
-          sh 'sudo ./mvnw clean install'
+          sh './mvnw clean install'
         }
     }
 
