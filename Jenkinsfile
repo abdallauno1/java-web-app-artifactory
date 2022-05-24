@@ -10,6 +10,12 @@ pipeline {
   
   stages {
 
+   stage('make file exec..') {
+       steps {
+          sh 'sudo chmod +x mvnw'
+        }
+    }
+
     stage('Build') {
        steps {
           sh './mvnw clean install'
