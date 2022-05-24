@@ -38,4 +38,19 @@
 		</plugins>
 	</build>
 
+ <distributionManagement>
+  <repository>
+    <id>artifact</id>
+    <name>Internal Releases</name>
+    <url>http://192.168.49.91:8082/artifactory/java-web-app-artifactory/</url>
+  </repository>
+ 
+  <snapshotRepository>
+    <id>artifact</id>
+    <name>Internal Releases</name>
+    <url>http://192.168.49.91:8082/artifactory/java-web-app-artifactory/</url>
+  </snapshotRepository>
+
+</distributionManagement>
+
 </project>
